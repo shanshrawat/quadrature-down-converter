@@ -24,13 +24,6 @@
 
 ---
 
-<p align="center">
-  <img src="media/hardware/breadboard_prototype.jpg" width="31%" alt="Breadboard prototype of the full quadrature down converter"/>
-  &nbsp;
-  <img src="media/hardware/oscillator_quadrature_dso.jpg" width="62%" alt="Quadrature LO measured on the oscilloscope"/>
-</p>
-<p align="center"><sub>The complete receiver on breadboard, and its quadrature local oscillator on a Keysight EDUX1052A.</sub></p>
-
 ## Overview
 
 Every modern radio (Wi-Fi, Bluetooth, LTE, GPS) has to shift a high-frequency carrier down to a frequency where it can be filtered and digitised. A **quadrature down converter** does this by multiplying the incoming signal with two copies of a local oscillator (LO) that are 90° apart. This produces an in-phase (I) and a quadrature (Q) output, which together keep the *sign* of the frequency offset — the property that lets a receiver reject its image channel without a bulky RF filter.
@@ -172,16 +165,6 @@ python scripts/draw_schematics.py
 - **Sharper filtering.** A second-order (or active, buffered) low-pass gives −40 dB/decade and removes the residual LO ripple visible on the outputs.
 - **Close the loop on image rejection.** Phase-shift one branch by 90° and sum (Hartley architecture), then sweep the RF input across the LO to measure image rejection directly.
 
-## Team
-
-| Name | Contribution |
-|---|---|
-| **Shreyansh Rawat** | <!-- add contribution --> |
-| **Shreyaas Sarkaar** | <!-- add contribution --> |
-| **Hiten Arora** | <!-- add contribution --> |
-
-Built for *Analog Electronic Circuits (EC2.103)*, IIIT Hyderabad, Spring 2026.
-
 ## References
 
 1. A. A. Abidi, "Direct-conversion radio transceivers for digital communications," *IEEE J. Solid-State Circuits*, vol. 30, no. 12, pp. 1399–1410, Dec. 1995.
@@ -193,3 +176,12 @@ Built for *Analog Electronic Circuits (EC2.103)*, IIIT Hyderabad, Spring 2026.
 ## License
 
 Code and documentation are released under the [MIT License](LICENSE).
+
+---
+
+<p align="center">
+  <img src="media/hardware/breadboard_prototype.jpg" width="31%" alt="Breadboard prototype of the full quadrature down converter"/>
+  &nbsp;
+  <img src="media/hardware/oscillator_quadrature_dso.jpg" width="62%" alt="Quadrature LO measured on the oscilloscope"/>
+</p>
+<p align="center"><sub>The complete receiver on breadboard, and its quadrature local oscillator on a Keysight EDUX1052A.</sub></p>

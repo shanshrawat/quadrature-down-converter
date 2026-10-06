@@ -19,7 +19,7 @@ schemdraw.config(font="Inter", fontsize=11, color=INK, lw=1.4, bgcolor="#fcfcfb"
 
 def save(d, name):
     for ext in ("svg", "png"):
-        d.save(str(OUT / f"{name}.{ext}"), dpi=220)
+        d.save(str(OUT / f"{name}.{ext}"), transparent=False, dpi=220)
 
 
 def limiter(d, x_left, x_right, y, top_first_res=True):
