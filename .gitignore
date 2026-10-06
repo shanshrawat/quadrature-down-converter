@@ -1,0 +1,25 @@
+# LTspice generated output
+*.raw
+*.log
+*.net
+*.fft
+*.imp
+*.mout
+*.tmp
+*.bak
+
+# Third-party device models: kept local, not redistributed (see simulation/README.md)
+simulation/TSMC_180nm.txt
+simulation/UA741.301
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
